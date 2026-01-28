@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="description" content="JackWash Mobile Car Wash offers professional mobile car wash services at the comfort of your home in Polokwane, Mankweng, Sebayeng and surrounding areas." />
+  <meta name="keywords" content="mobile car wash, car wash at home, JackWash, Polokwane car wash, Mankweng car wash" />
+  <meta name="author" content="JackWash Mobile Car Wash" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JackWash Mobile Car Wash</title>
+  <title>JackWash Mobile Car Wash | Mobile Car Wash at Your Home</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: Arial, Helvetica, sans-serif;
-      line-height: 1.6;
-      background: #0f172a;
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      line-height: 1.7;
+      background: linear-gradient(180deg, #020617, #0f172a);
       color: #e5e7eb;
     }
     header {
       background: #020617;
-      padding: 20px;
+      padding: 30px 20px;
       text-align: center;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4);
     }
     header h1 { color: #38bdf8; }
     nav {
@@ -31,9 +35,10 @@
     }
     nav a:hover { color: #38bdf8; }
     section {
-      padding: 40px 20px;
+      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      animation: fadeUp 0.8s ease both;
     }
     .hero {
       text-align: center;
@@ -55,9 +60,10 @@
     footer {
       background: #020617;
       text-align: center;
-      padding: 20px;
-      margin-top: 40px;
+      padding: 30px 20px;
+      margin-top: 60px;
       font-size: 0.9rem;
+      opacity: 0.9;
     }
     .whatsapp-btn {
       position: fixed;
@@ -73,19 +79,19 @@
       z-index: 1000;
     }
     .whatsapp-btn:hover { opacity: 0.9; }
-  </style>
+  @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+</style>
 </head>
 <body>
 
   <header>
-    <h1>JackWash Mobile Car Wash</h1>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#gallery">Gallery</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <h1>JackWash Mobile Car Wash – We Wash at Your Home</h1>
+    <p>Professional mobile car wash at the comfort of your home</p>
+    <a href="https://wa.me/27793179822?text=Hello%20JackWash%20Mobile%20Car%20Wash%2C%20I%20would%20like%20to%20book%20a%20car%20wash." target="_blank" style="display:inline-block;margin-top:20px;background:#22c55e;color:#000;padding:14px 26px;border-radius:999px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(34,197,94,0.4);">📲 Book on WhatsApp</a>
   </header>
 
   <section class="hero" id="home">
@@ -113,10 +119,50 @@
     <h2>Before & After</h2>
     <p>See the difference JackWash Mobile Car Wash makes.</p>
     <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px;margin-top:20px;">
-      <img src="images/before1.jpg" alt="Before car wash" style="width:100%;border-radius:10px;">
-      <img src="images/after1.jpg" alt="After car wash" style="width:100%;border-radius:10px;">
+      <img src="images/before1.jpg" alt="Before car wash in Polokwane" style="width:100%;border-radius:10px;">
+      <img src="images/after1.jpg" alt="After mobile car wash at home" style="width:100%;border-radius:10px;">
       <img src="images/before2.jpg" alt="Before car wash" style="width:100%;border-radius:10px;">
       <img src="images/after2.jpg" alt="After car wash" style="width:100%;border-radius:10px;">
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Service Areas</h2>
+    <p>We offer mobile car wash services at the comfort of your home in and around your area.</p>
+    <ul>
+      <li>📍 Polokwane</li>
+      <li>📍 Mankweng</li>
+      <li>📍 Sebayeng</li>
+      <li>📍 Surrounding areas</li>
+    </ul>
+    <div style="margin-top:25px;border-radius:12px;overflow:hidden;">
+      <iframe
+        src="https://www.google.com/maps?q=Polokwane,South%20Africa&output=embed"
+        width="100%"
+        height="300"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>What Our Customers Say</h2>
+    <p>Real feedback from happy customers.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;margin-top:25px;">
+      <div style="background:#020617;padding:20px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.3);">
+        <p>“Excellent service! My car looked brand new without me leaving home.”</p>
+        <strong>— Thabo M.</strong>
+      </div>
+      <div style="background:#020617;padding:20px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.3);">
+        <p>“Very professional and affordable. I highly recommend JackWash.”</p>
+        <strong>— Lerato K.</strong>
+      </div>
+      <div style="background:#020617;padding:20px;border-radius:12px;box-shadow:0 6px 15px rgba(0,0,0,0.3);">
+        <p>“They came on time and did an amazing job. Will book again!”</p>
+        <strong>— Sipho R.</strong>
+      </div>
     </div>
   </section>
 
@@ -135,5 +181,6 @@
     💬 Book on WhatsApp
   </a>
 
+  <a href="https://wa.me/27793179822?text=Hello%20JackWash%20Mobile%20Car%20Wash%2C%20I%20would%20like%20to%20book%20a%20car%20wash." target="_blank" style="position:fixed;bottom:20px;right:20px;background:#22c55e;color:#000;padding:16px 18px;border-radius:50%;font-size:24px;text-decoration:none;box-shadow:0 10px 25px rgba(34,197,94,0.5);z-index:999;">💬</a>
 </body>
 </html>
